@@ -8,5 +8,9 @@ namespace OSIM.Core
 {
     public class Bussing
     {
+        public void GetName()
+        {
+            return;
+        }
     }
 }
