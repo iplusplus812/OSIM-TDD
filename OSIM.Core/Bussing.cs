@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OSIM.Core
 {
-    public class Class1
+    public class Bussing
     {
     }
 }
