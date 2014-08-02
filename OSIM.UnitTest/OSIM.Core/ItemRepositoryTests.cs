@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NBehave.Spec.NUnit;
 using NUnit.Framework;
 
 namespace OSIM.UnitTest.OSIM.Core
@@ -14,7 +15,7 @@ namespace OSIM.UnitTest.OSIM.Core
 
     public class and_saving_a_valid_item_type : when_working_with_the_item_type_reository
     {
-        private object _result;
+        private int _result;
         private IItemTypeRepository _itemTypeRepository;
         private ItemType _testItemType;
 
@@ -26,7 +27,7 @@ namespace OSIM.UnitTest.OSIM.Core
         [Test]
         public void then_a_valid_item_type_id_should_be_returned()
         {
-           
+           _result.ShouldEqual(_itemTypeId);
         }
     }
 }
